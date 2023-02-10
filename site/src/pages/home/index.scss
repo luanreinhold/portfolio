@@ -1,9 +1,28 @@
 .main-home {
    
   
-    background: linear-gradient(to right, #151515, #151515);
+    background: linear-gradient(310deg, #363636, #2f2935, #151515);
+    background-size: 600% 600%;
+
+
+
+    -webkit-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+    
     height: 100vh;
     padding: 3.5rem;
+    
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:33% 0%}
+        50%{background-position:68% 100%}
+        100%{background-position:33% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:33% 0%}
+        50%{background-position:68% 100%}
+        100%{background-position:33% 0%}
+    }
 
     .container-home {
         
@@ -26,7 +45,7 @@
 
         p {
             font-size: clamp(0.8em, 0.1em + 1vw, 2em);
-            line-height: 1.5rem;
+            line-height: 2rem;
             max-height: 15rem; 
         }
 
@@ -41,9 +60,11 @@
     .side-menu {
         width: 15rem;
         height: 23rem;
-        background-color: rgba(255, 255, 255, 0.858);
+        background-color: hsla(0, 0%, 100%, 0.041);
         justify-content: center;
         align-items: center;
+        color: white;
+        border-radius: 15px;
         ul {
             padding-inline-start: 0px;
         }
@@ -68,17 +89,14 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        
-        
         width: 45rem;
-        background-color: gray;
     }
 
     .container-contatos {
         width: 45rem;
-        background-color: white;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
 
         img {
             width: 5rem;
@@ -90,7 +108,7 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
-
+        align-items: center;
         width: 15rem;
         max-width: 90%;
         height: 12rem;
@@ -121,11 +139,16 @@
         margin: 1rem;
     }
 
+    #mysql-icon{ 
+        height: 50%;
+    }
+
     li:hover {
         cursor: pointer;
+        opacity: 0.8;
     }
-    .box-projeto:hover {
+    .box-projeto:focus-within {
        cursor: pointer;
-      
+        opacity: .7;
     }
 }

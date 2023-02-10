@@ -5,7 +5,7 @@ import CardIcon from '../../components/cardTech'
 import ModalProjeto from '../../components/modal'
 function Home() {
 
-  const [selecionarTexto, setSelecionarTexto] = useState('contato');
+  const [selecionarTexto, setSelecionarTexto] = useState('default');
 
   const [exibirModal, setExibirModal] = useState(false)
 
@@ -17,11 +17,19 @@ function Home() {
     setExibirModal(false)
   }
 
+  function alterarTela (status) {
+
+    setSelecionarTexto(status)
+  }
+
+
 
 
   return (
     <main className='main-home'>
       <ModalProjeto exibir={exibirModal} fechar={modalFechar} />
+
+      
 
       <section className='container-home flexbox-row '>
         {selecionarTexto === 'default' &&
@@ -55,14 +63,16 @@ function Home() {
           </section>
         }
 
-        {selecionarTexto === 'projetos' &&
+        {selecionarTexto === 'projeto' &&
           <section className="container-projetos">
             <div onClick={modalAbrir} className="box-projeto">
+              <img src="./images/storegames-icon.svg" alt="icon loja" />
               <div className="box-projeto-footer"><b>Store Games</b></div>
             </div>
 
-            <div className="box-projeto">
-              <div className="box-projeto-footer"> </div>
+            <div onClick={modalAbrir} className="box-projeto">
+              <img id='mysql-icon' src="./images/mysql-original.svg" alt="" />
+              <div className="box-projeto-footer"><b>Modelagens Mysql</b> </div>
             </div>
           </section>
         }
@@ -87,10 +97,10 @@ function Home() {
         }
         <aside className='side-menu flexbox-column fontd-quicksan'>
           <ul style={{ "list-style": "none" }}>
-            <li>Sobre mim</li>
-            <li>Tecnologias que uso</li>
-            <li>Projetos</li>
-            <li>Contatos</li>
+            <li onClick={() => alterarTela('default')}>Sobre mim</li>
+            <li onClick={() => alterarTela('tecnologia')}>Tecnologias que uso</li>
+            <li onClick={() => alterarTela('projeto')}>Projetos</li>
+            <li onClick={() => alterarTela('contato')}>Contatos</li>
           </ul>
         </aside>
 
