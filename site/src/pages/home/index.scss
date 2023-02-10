@@ -1,0 +1,74 @@
+.main-home {
+   
+  
+    background: linear-gradient(to right, #151515, #151515);
+    height: 100vh;
+    padding: 3.5rem;
+
+    .container-home {
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        border: 1px solid #767676;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .container-about-me {
+       
+        h1 {
+            font-size: clamp(1em, 1em + 1vw, 2em);
+            line-height: 2.5rem;
+        }
+
+        p {
+            font-size: clamp(0.8em, 0.1em + 1vw, 2em);
+            line-height: 1.5rem;
+            max-height: 15rem; 
+        }
+
+        padding: 1.5rem;
+
+        width: 45rem;
+        max-height: 15rem;
+        color: white;
+      
+    }
+
+    .side-menu {
+        width: 15rem;
+        height: 23rem;
+        background-color: rgba(255, 255, 255, 0.858);
+        justify-content: center;
+        align-items: center;
+        ul {
+            padding-inline-start: 0px;
+
+          
+        }
+        li {
+            padding: 1rem;
+            font-size: clamp(0.7em, 0.1em + 1vw, 1em);
+            margin: 1rem 0rem 1rem 0rem;
+            border: 1px solid black;
+        }
+    }
+
+    .container-tecnologias {
+        display: flex;
+        flex-direction: column;
+        width: 45rem;
+    }
+    .container-tecnologias > div {
+       
+        justify-content: space-around;
+     
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
+}
