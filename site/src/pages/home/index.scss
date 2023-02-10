@@ -46,8 +46,6 @@
         align-items: center;
         ul {
             padding-inline-start: 0px;
-
-          
         }
         li {
             padding: 1rem;
@@ -63,12 +61,71 @@
         width: 45rem;
     }
     .container-tecnologias > div {
-       
         justify-content: space-around;
-     
+    }
+
+    .container-projetos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        
+        width: 45rem;
+        background-color: gray;
+    }
+
+    .container-contatos {
+        width: 45rem;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+
+        img {
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+
+    .box-projeto {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        width: 15rem;
+        max-width: 90%;
+        height: 12rem;
+        background-color: white;
+        margin: 1rem;
+
+        .box-projeto-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 3rem;
+            color: white;
+           background-color: #151515;
+            max-height: 30%;
+
+        }
+    }
+
+    .card-github,
+    .card-linkedin,
+    .card-email {
+        width: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
     }
 
     li:hover {
         cursor: pointer;
+    }
+    .box-projeto:hover {
+       cursor: pointer;
+      
     }
 }
