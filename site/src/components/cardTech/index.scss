@@ -15,11 +15,11 @@
     }
 
 
-    @media  (max-width: 1024px) {
-            .card-component{
-
-            }
-    
+    @media  (max-width: 720px) {
+      
+        .card-component  {
+             font-size: clamp(0.7em, 0.1em + 1vw, 2em);
+        }
         
         }
 }
