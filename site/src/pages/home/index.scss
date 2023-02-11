@@ -45,20 +45,23 @@
 
         p {
             font-size: clamp(0.8em, 0.1em + 1vw, 2em);
-            line-height: 2rem;
+            line-height: 1.5rem;
             max-height: 15rem; 
         }
 
         padding: 1.5rem;
 
         width: 45rem;
+       
         max-height: 15rem;
         color: white;
       
     }
 
     .side-menu {
+     
         width: 15rem;
+        min-width: 10rem;
         height: 23rem;
         background-color: hsla(0, 0%, 100%, 0.041);
         justify-content: center;
@@ -80,6 +83,7 @@
         display: flex;
         flex-direction: column;
         width: 45rem;
+        background-color: pink;
     }
     .container-tecnologias > div {
         justify-content: space-around;
@@ -103,6 +107,8 @@
             height: 5rem;
         }
     }
+
+ 
 
     .box-projeto {
         display: flex;
@@ -131,6 +137,7 @@
     .card-github,
     .card-linkedin,
     .card-email {
+        color: white;
         width: 7rem;
         display: flex;
         flex-direction: column;
@@ -150,5 +157,46 @@
     .box-projeto:focus-within {
        cursor: pointer;
         opacity: .7;
+    }
+
+    
+ @media  (max-width: 1024px) {
+    .side-menu {
+        width: 13rem;
+        min-width: 10rem;
+        height: 21rem;
+    }
+    .container-tecnologias  {
+
+        background-color: red;
+        width: 50%;
+    }
+
+    }
+
+    @media  (max-width: 1200px) {
+        .container-about-me  {
+            width: 50%;
+        }
+        .container-tecnologias  {
+
+            background-color: red;
+            width: 50%;
+        }
+
+        .container-projetos {
+
+            width: 50%;
+            background-color: red;
+        }
+
+        .container-contatos {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+    
+        }
+   
     }
 }
