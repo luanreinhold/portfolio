@@ -7,7 +7,7 @@ import ModalSql from '../../components/modalSql'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-function Home() {
+export default function Home() {
 
   const [selecionarTexto, setSelecionarTexto] = useState('default');
 
@@ -86,10 +86,12 @@ function Home() {
           <article data-aos="fade" className='container-about-me naoSelecionavel fontd-quicksan'  >
             <div data-aos="slide-left">about me</div>
             <h1 data-aos="slide-right">Meu nome é  Luan Reinhold, </h1>
-            <p data-aos="zoom-in-up">Possuo formação técnica em informática onde aprendi
-              a desenvolver soluções através de tecnologias e ferramentas. <p>Busco sempre evoluir como desenvolvedor fullstack através de estudos e projetos. Atualmente estou cursando Análise e desenvolvimento de sistemas,
+            <p data-aos="zoom-in-up">
+              Possuo formação técnica em informática onde aprendi
+              a desenvolver soluções através de tecnologias e ferramentas.</p>
+              <p data-aos="zoom-in-up">Busco sempre evoluir como desenvolvedor fullstack através de estudos e projetos. Atualmente estou cursando Análise e desenvolvimento de sistemas,
                 onde procuro oportunidade como estágiario/trainee para adquirir cada vez mais conhecimentos.</p>
-            </p>
+            
           </article>
         }
 
@@ -162,4 +164,4 @@ function Home() {
   );
 }
 
-export default Home;
+
