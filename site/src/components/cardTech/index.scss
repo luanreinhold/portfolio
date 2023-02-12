@@ -22,4 +22,14 @@
         }
         
         }
+
+        @media  (max-width: 450px) { 
+            .card-component  {
+                p {
+                    font-size: clamp(0.5em, 0.1em + 1vw, 1em) !important;
+                }
+               
+                margin: 0.5rem !important;
+           }
+        }
 }
