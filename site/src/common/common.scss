@@ -36,3 +36,25 @@ body, html {
   }
 
 
+  @media (max-width: 376px) {
+
+    .main-home {
+        padding: 1rem !important;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .main-home {
+        padding: 1.5rem !important;
+      
+    }
+}
+
+@media (max-width: 325px) {
+
+    .main-home {
+        padding: 0rem !important;
+    }
+
+}

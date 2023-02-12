@@ -7,15 +7,17 @@
     animation: Backgroundlinear 9s ease infinite;
     height: 100vh;
     padding: 3.5rem;
-    
+
 
     @-webkit-keyframes Backgroundlinear {
         0% {
             background-position: 33% 0%
         }
+
         50% {
             background-position: 68% 100%
         }
+
         100% {
             background-position: 33% 0%
         }
@@ -25,9 +27,11 @@
         0% {
             background-position: 33% 0%
         }
+
         50% {
             background-position: 68% 100%
         }
+
         100% {
             background-position: 33% 0%
         }
@@ -63,26 +67,26 @@
     .mobile-menu {
         display: none;
         cursor: pointer;
-      }
+    }
 
-    .mobile-menu div {  
+    .mobile-menu div {
         width: 32px;
         height: 2px;
         background: #fff;
         margin: 8px;
         transition: 0.3s;
-      }
+    }
 
 
-      @media (max-width: 700px) {
+    @media (max-width: 700px) {
         .container-contatos {
-       
+
             width: 40rem;
             height: 100%;
             display: flex;
             flex-direction: column !important;
             align-items: center;
-    
+
             img {
                 width: 3.5rem;
                 height: 3.5rem;
@@ -90,12 +94,13 @@
         }
 
         .tecnologia-row1 {
-          flex-wrap: wrap;
-    
-        }   
+            flex-wrap: wrap;
+
+        }
+
         .tecnologia-row2 {
             flex-wrap: wrap;
-    
+
         }
 
         .main-home {
@@ -103,11 +108,12 @@
         }
 
         .container-tecnologias {
-         
+
             margin-top: 1rem !important;
             display: flex;
             flex-direction: column;
             width: 70%;
+
             img {
                 width: 3rem;
                 height: 3rem;
@@ -130,12 +136,12 @@
                 margin: 1rem 0rem 1rem 0rem;
                 border: 1px solid #767676;
             }
-    
-        }
-          
-      } 
 
-      @media (max-width: 500px) {
+        }
+
+    }
+
+    @media (max-width: 500px) {
 
         .side-menu {
             width: 10rem;
@@ -158,19 +164,21 @@
         .tecnologia-row1 {
             font-size: clamp(0.7em, 0.1em + 1vw, 2em);
             flex-wrap: wrap;
-      
-          }   
-          .tecnologia-row2 {
+
+        }
+
+        .tecnologia-row2 {
             font-size: clamp(0.7em, 0.1em + 1vw, 2em);
-              flex-wrap: none !important;
-          }
-  
-         
-  
-          .container-tecnologias {
+            flex-wrap: none !important;
+        }
+
+
+
+        .container-tecnologias {
             margin-top: 0em !important;
             margin-top: 1rem !important;
             width: 80% !important;
+
             img {
                 width: 2rem !important;
             }
@@ -182,47 +190,52 @@
                 font-size: clamp(1em, 1em + 1vw, 2em);
                 line-height: 2.5rem;
             }
+
             p {
                 font-size: clamp(0.8em, 0.1em + 1vw, 2em);
                 line-height: 1.5rem;
                 max-height: 15rem;
             }
+
             padding: 1.5rem;
             width: 45rem;
             max-height: 15rem;
             color: white;
-    
+
         }
 
         .container-about-me {
-           
+
             h1 {
-                font-size: clamp(0.7em, 0.6em + 1vw, 2em)!important;
-                line-height: 2rem !important; 
+                font-size: clamp(0.7em, 0.6em + 1vw, 2em) !important;
+                line-height: 2rem !important;
             }
+
             p {
                 font-size: clamp(0.7em, 0.1em + 1vw, 2em) !important;
                 line-height: 1.3rem !important;
                 max-height: 15rem;
             }
+
             padding: 1rem !important;
             width: 45rem;
-           
+
             max-height: 30rem !important;
             color: white;
-    
+
         }
 
         .box-projeto {
-            width: 10rem !important; 
+            width: 10rem !important;
             max-width: 90%;
             height: 7rem !important;
             background-color: white;
             margin: 1rem;
+
             img {
                 width: 90%;
             }
-    
+
             .box-projeto-footer {
                 display: flex;
                 justify-content: center;
@@ -232,22 +245,92 @@
                 color: white;
                 background-color: #151515;
                 max-height: 40%;
-    
+
             }
         }
 
-      }
+    }
+
+    @media (max-width: 376px) {
+        .side-menu {
+            width: 10rem;
+            min-width: 10rem;
+            height: 23rem;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3.8rem !important;
+                height: 2.5rem;
+                font-size: clamp(0.5m, 0.1em + 1vw, 1em) !important;
+                margin: 1rem 0rem 1rem 0rem;
+                border: 1px solid #767676;
+            }
+
+        }
+        .main-home {
+            padding: 2rem !important;
+        }
+
+        .container-about-me {
+            margin-top: 5rem !important;
+            h1 {
+                font-size: clamp(1em, 0.6em + 1vw, 2em) !important;
+                line-height: 2rem !important;
+            }
+
+            p {
+                font-size: clamp(0.8em, 0.1em + 1vw, 2em) !important;
+                line-height: 1.3rem !important;
+                max-height: 15rem;
+            }
+
+            padding: 0.5rem !important;
+            width: 45rem;
+            height: 100% !important;
+            max-height: 300rem !important;
+            color: white;
+
+        }
+
+    }
+
+    @media (max-width: 376px) {
+        .container-about-me {
+            margin-top: 5rem !important;
+            h1 {
+                font-size: clamp(1em, 0.8em + 1vw, 2em) !important;
+                line-height: 2rem !important;
+            }
+
+            p {
+                font-size: clamp(0.9em, 0.1em + 1vw, 2em) !important;
+                line-height: 1.3rem !important;
+                max-height: 15rem;
+            }
+
+            padding: 1em !important;
+            width: 45rem;
+            height: 100% !important;
+            max-height: 300rem !important;
+            color: white;
+
+        }
+    }
 
     .container-about-me {
         h1 {
             font-size: clamp(1em, 1em + 1vw, 2em);
             line-height: 2.5rem;
         }
+
         p {
             font-size: clamp(0.8em, 0.1em + 1vw, 2em);
             line-height: 1.5rem;
             max-height: 15rem;
         }
+
         padding: 1.5rem;
         width: 45rem;
         max-height: 15rem;
@@ -277,14 +360,14 @@
             border: 1px solid #767676;
         }
 
-      
+
     }
 
     .container-tecnologias {
         display: flex;
         flex-direction: column;
         width: 45rem;
-       
+
     }
 
     .container-tecnologias>div {
@@ -365,7 +448,7 @@
 
 
     @media (max-width: 1024px) {
-  
+
 
         .container-tecnologias {
             width: 50%;
@@ -418,6 +501,7 @@
             background-color: hsla(0, 0%, 100%, 0.041);
             color: white;
             border-radius: 0px;
+
             ul {
                 width: 90%;
                 display: flex;
@@ -429,15 +513,18 @@
 
         .container-about-me {
             margin-top: 20%;
+
             h1 {
                 font-size: clamp(1em, 1em + 1vw, 2em);
                 line-height: 2.5rem;
             }
+
             p {
                 font-size: clamp(0.7em, 0.1em + 1vw, 2em);
                 line-height: 1.5rem;
                 max-height: 15rem;
             }
+
             padding: 1.5rem;
             width: 80%;
             max-height: 15rem;
@@ -450,6 +537,7 @@
             display: flex;
             flex-direction: column;
             width: 70%;
+
             img {
                 width: 3rem;
                 height: 3rem;
