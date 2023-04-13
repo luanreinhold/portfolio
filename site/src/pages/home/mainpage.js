@@ -4,6 +4,7 @@ import '../../common/common.scss'
 import CardIcon from '../../components/cardTech'
 import ModalProjeto from '../../components/modal'
 import ModalSql from '../../components/modalSql'
+import ModalPokedex from '../../components/modalPokedex'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
@@ -18,6 +19,7 @@ export default function Home() {
 
   const [exibirModal, setExibirModal] = useState(false)
   const [exibirModalSql, setExibirModalSql] = useState(false)
+  const [exibirModalPokemon, setExibirModalPokemon] = useState(false)
 
 
 
@@ -35,6 +37,14 @@ export default function Home() {
 
   function modalFecharSql() {
     setExibirModalSql(false)
+  }
+
+  function modalAbrirPokedex() {
+    setExibirModalPokemon(true)
+  }
+
+  function modalFecharPokedex() {
+    setExibirModalPokemon(false)
   }
 
   function alterarTela(status) {
@@ -64,7 +74,6 @@ export default function Home() {
       if (selecionarTexto === 'projeto')
         setStatusArrow3('arrow-visible')
 
-
       if (selecionarTexto === 'contato')
         setStatusArrow4('arrow-visible')
     }
@@ -80,6 +89,7 @@ export default function Home() {
     <main className='main-home'>
       <ModalProjeto exibir={exibirModal} fechar={modalFechar} />
       <ModalSql exibir={exibirModalSql} fechar={modalFecharSql} />
+      <ModalPokedex exibir={exibirModalPokemon} fechar={modalFecharPokedex} />
 
       <section className='container-home flexbox-row '>
         {selecionarTexto === 'default' &&
@@ -89,8 +99,8 @@ export default function Home() {
             <p data-aos="zoom-in-up">
               Possuo formação técnica em informática onde aprendi
               a desenvolver soluções através de tecnologias e ferramentas.</p>
-              <p data-aos="zoom-in-up">Busco sempre evoluir como desenvolvedor fullstack através de estudos e projetos. Atualmente estou cursando Análise e desenvolvimento de sistemas,
-                onde procuro oportunidade como estágiario/trainee para adquirir cada vez mais conhecimentos.</p>
+              <p data-aos="zoom-in-up">Busco sempre evoluir como desenvolvedor fullstack através de estudos e projetos. Atualmente estou cursando Análise e Desenvolvimento de Sistemas no Senac,
+                onde procuro oportunidade como estágiario/trainee para aplicar e desenvolver meus conhecimentos.</p>
             
           </article>
         }
@@ -102,9 +112,10 @@ export default function Home() {
             </div>
             <div data-aos="slide-right" className='flexboxrow tecnologia-row1'>
               <CardIcon imagem='./images/javascript.svg' nome='Javascript' />
+              <CardIcon imagem='./images/java-original.svg' nome='Java' />
               <CardIcon imagem='./images/nodejs-plain-wordmark.svg' nome='Node' />
               <CardIcon imagem='./images/mysql-original.svg' nome='Mysql' />
-              <CardIcon imagem='./images/mongodb-original.svg' nome='MongoDB' />
+              
             </div>
             <div data-aos="slide-up" className='flexboxrow tecnologia-row2'>
               <CardIcon imagem='./images/html.svg' nome='Html' />
@@ -119,6 +130,7 @@ export default function Home() {
           <div>
             <p data-aos="slide-right" style={{ 'color': 'white', 'margin': '1rem' }} className="fontd-quicksan">Novos projetos em andamento...</p>
             <section data-aos="fade-up" className="container-projetos">
+              
               <div onClick={modalAbrir} className="box-projeto">
                 <img src="./images/storegames-icon.svg" alt="icon loja" />
                 <div className="box-projeto-footer"><b>Store Games</b></div>
@@ -127,6 +139,12 @@ export default function Home() {
                 <img id='mysql-icon' src="./images/mysql-original.svg" alt="" />
                 <div className="box-projeto-footer"><b>Modelagens Mysql</b> </div>
               </div>
+              <div onClick={modalAbrirPokedex} className="box-projeto">
+                <img id='mysql-icon' src="./images/FreeVector-Poke-Ball.png" alt="" />
+                <div className="box-projeto-footer"><b>Pokédex</b> </div>
+              </div>
+              
+              
             </section>
 
           </div>
@@ -141,7 +159,7 @@ export default function Home() {
             </div>
             <div data-aos="fade-down" className="card-linkedin">
               <a href="https://www.linkedin.com/in/luanreinhold"><img src="./images/linkedin-plain-wordmark.svg" alt="linkedin icon" /></a>
-              <label>Luan Reinhold</label>
+              <label>Luan Reinhold (11) 96732-4777</label>
             </div>
             <div data-aos="fade-up" className="card-email">
               <img src="./images/icons8-gmail.svg" alt="github icon" />

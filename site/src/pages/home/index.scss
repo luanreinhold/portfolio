@@ -42,6 +42,7 @@
         justify-content: space-around;
         align-items: center;
         border: 1px solid #767676;
+        border-radius: 20px;
         height: 100%;
         width: 100%;
 
@@ -58,6 +59,9 @@
     }
 
     .row-arrow {
+        li {
+            border-radius: 10px;
+        }
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -125,7 +129,7 @@
             width: 10rem;
             min-width: 10rem;
             height: 23rem;
-
+            border-radius: 10px;
             li {
                 display: flex;
                 align-items: center;
@@ -135,13 +139,15 @@
                 font-size: clamp(0.6em, 0.1em + 1vw, 1em) !important;
                 margin: 1rem 0rem 1rem 0rem;
                 border: 1px solid #767676;
+                border-radius: 10px !important;
+               
             }
 
         }
 
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 620px) {
 
         .side-menu {
             width: 10rem;
@@ -311,7 +317,7 @@
             }
 
             padding: 1em !important;
-            width: 45rem;
+            width: 40em !important;
             height: 100% !important;
             max-height: 300rem !important;
             color: white;
@@ -375,6 +381,7 @@
     }
 
     .container-projetos {
+        flex-wrap: wrap;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -465,9 +472,7 @@
             width: 50%;
         }
 
-        .container-projetos {
-            width: 50%;
-        }
+       
 
         .container-contatos {
             width: 50%;
