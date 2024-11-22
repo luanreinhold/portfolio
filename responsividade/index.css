@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --color1: #EDAB00;
+    --color2: #060B33;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+header h1 {
+    font-size: 4vmin;
+    margin-bottom: 15px;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu a {
+    color: var(--color1);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.plane {
+    width: 25%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.banner {
+    background-image: url(./assets/images/praia_.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color2);
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+
+.banner h2 {
+    margin: 20px 0;
+    font-size: 3rem;
+}
+
+.banner h3 {
+    font-size: 2rem;
+}
+
+.banner .btn {
+    margin-top: 20px;
+    background: var(--color2);
+    border: 1px solid var(--color2);
+    border-radius: 5px;
+    color: var(--color1);
+    padding: 20px 50px;
+    text-align: center;
+    font-weight: 500;
+    transition: .5s;
+    font-size: 1.5rem;
+}
+
+.banner .btn:hover {
+    background: transparent;
+    color: var(--color2);
+}
+
+.informacoes {
+    background: var(--color2);
+    color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.informacoes h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+.informacoes p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.informacoes hr {
+    width: 200px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.informacoes .item {
+    width: 100%;
+    display: flex;
+}
+
+.informacoes .item li {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.informacoes .item li img {
+    width: 12%;
+    margin-bottom: 20px;
+}
+
+.informacoes .item li h4 {
+    color: var(--color1);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.informacoes .item li p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.cadastro h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: var(--color1);
+}
+
+.cadastro p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.cadastro form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+.cadastro form input {
+    padding: 15px;
+    border: 2px solid var(--color1);
+    border-radius: 4px;
+    margin-right: 15px;
+    width: 300px;
+}
+
+.cadastro form button {
+    padding: 15px;
+    background: var(--color2);
+    color: var(--color1);
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color1);
+    padding: 50px 0;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer p {
+    color: var(--color2);
+    text-align: center;
+}
+
+footer ul li img {
+    width: 80%;
+    height: 90%;
+}
+
+@media (max-width: 850px) {
+    .informacoes .item {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    } 
+
+    .banner {
+        margin-top: 50px;
+    }
+
+    .banner h1 {
+        font-size: 2.3rem;
+    }
+
+    .banner h3 {
+        font-size: 1.3rem;
+    }
+
+    .cadastro input {
+        margin-bottom: 15px;
+    }
+
+    
+
+
+}
